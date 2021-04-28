@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <title>Philipe Almeida🇧🇷</title>
+  <link rel="stylesheet" href="assets/index.css">
+  <link rel="manifest" href="assets/site.webmanifest">
+</head>
+
+<body>
+  <main>
+    <section class="content">
+      <header>
+        <h1>Philipe Almeida</h1>
+        <section class="container">
+          <p><span class="descr">Brazilian, based in São Paulo</span> <i>🇧🇷</i></p>
+        </section>
+      </header>
+      <article>
+        <section class="container">
+          <h2 id="main-content"></h2>
+        </section>
+      </article>
+      <footer>
+        <nav class="container">
+          <ul>
+            <li><a target="_blank" href="https://linkedin.com/in/almeidaphilipe">linkedin</a></li>
+            <li><a target="_blank" href="https://github.com/philipealmeida">github</a></li>
+            <li><a target="_blank" href="mailto:devpalmeida@gmail.com">e-mail</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </section>
+  </main>
+  <script>
+    const DESK_CONTENT =
+      `Hi. I’m Philipe,<br>a Front End Engineer & UI Designer focused<br> in architecture<br>and user interface 
+      development<br><span class="sn">——</span> currently<br> working at <span class="sight">vivo.</span>`;
+
+    const MOB_CONTENT =
+      `Hi. I’m Philipe,<br>a Front End Engineer<br>& UI Designer focused in visual and interaction<br>design<br>
+      <span class="sn">——</span> currently<br> working at <span class="sight">vivo.</span>`;
+
+    const $HERO = document.getElementById('main-content');
+    const setContent = isMobile => isMobile ? $HERO.innerHTML = MOB_CONTENT : $HERO.innerHTML = DESK_CONTENT;
+    const deviceSize = () => {
+      document.documentElement.style.setProperty('--win-height', `${window.innerHeight}px`)
+      if (window.matchMedia("(max-width: 500px)").matches) {
+        setContent(true);
+      } else {
+        setContent(false);
+      }
+    };
+
+    window.addEventListener('load', deviceSize);
+    window.addEventListener('resize', deviceSize);
+    
+  </script>
+</body>
+
+</html>
