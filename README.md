@@ -2,14 +2,13 @@
 
 [Live Demo](https://palmeida.netlify.app/)
 
-Sobre mim e os meus canais de contato.
-Seção de portfólio em desenvolvimento...
+About me and my contact channels. 
+Portfolio section in development ...
 
-Tecnologias 
+Technology 
 - Vanilla
 - HTML, CSS
 - Netlify
-
 
 ## Author
 
