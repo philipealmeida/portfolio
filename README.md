@@ -1,6 +1,7 @@
 # About me and main contacts
 
 [Live Demo](https://palmeida.netlify.app/)
+
 Sobre mim e os meus canais de contato.
 Seção de portfólio em desenvolvimento...
 
