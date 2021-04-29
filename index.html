@@ -6,7 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="assets/favicon.ico" />
-  <title>Philipe Almeida🇧🇷</title>
+  <title>Philipe Almeida🇧🇷 – Hello, and stay in contact👋</title>
+  <meta name="description" content="About me, get to know my main contact channels.">
+  <meta name=”robots” content=”index, follow”>
+
+  <meta property="og:type" content="developer" />
+  <meta property="og:title" content="Philipe Almeida🇧🇷" />
+  <meta property="og:description" content="About me, get to know my main contact channels." />
+  <meta property="og:image" content="  https://palmeida.netlify.app/assets/android-chrome-192x192.png"/>
+  <meta property="og:url" content="https://palmeida.netlify.app/" />
+  <meta property="og:site_name" content="Philipe Almeida🇧🇷" />
+
   <link rel="stylesheet" href="assets/index.css">
   <link rel="manifest" href="assets/site.webmanifest">
 </head>
@@ -15,14 +25,14 @@
   <main>
     <section class="content">
       <header>
-        <h1>Philipe Almeida</h1>
+        <h2>Philipe Almeida</h2>
         <section class="container">
           <p><span class="descr">Brazilian, based in São Paulo</span> <i>🇧🇷</i></p>
         </section>
       </header>
       <article>
         <section class="container">
-          <h2 id="main-content"></h2>
+          <h1 id="main-content"></h1>
         </section>
       </article>
       <footer>
@@ -45,9 +55,9 @@
       `Hi. I’m Philipe,<br>a Front End Engineer<br>& UI Designer focused in visual and interaction<br>design<br>
       <span class="sn">——</span> currently<br> working at <span class="sight">vivo.</span>`;
 
-    const $HERO = document.getElementById('main-content');
-    const setContent = isMobile => isMobile ? $HERO.innerHTML = MOB_CONTENT : $HERO.innerHTML = DESK_CONTENT;
-    const deviceSize = () => {
+    const contentUpdate = () => {
+      const $HERO = document.getElementById('main-content');
+      const setContent = isMobile => isMobile ? $HERO.innerHTML = MOB_CONTENT : $HERO.innerHTML = DESK_CONTENT;
       document.documentElement.style.setProperty('--win-height', `${window.innerHeight}px`)
       if (window.matchMedia("(max-width: 500px)").matches) {
         setContent(true);
@@ -56,8 +66,8 @@
       }
     };
 
-    window.addEventListener('load', deviceSize);
-    window.addEventListener('resize', deviceSize);
+    window.addEventListener('load', contentUpdate);
+    window.addEventListener('resize', contentUpdate);
     
   </script>
 </body>
