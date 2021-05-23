@@ -12,14 +12,14 @@
 
 @font-face {
   font-family: "NeueLight";
-  src: url('NHaasGroteskTXPro-55Rg.ttf') format('truetype');
+  src: url('media/NHaasGroteskTXPro-55Rg.ttf') format('truetype');
   font-weight: normal;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "NeueRegular";
-  src: url('NHaasGroteskTXPro-65Md.ttf') format('truetype');
+  src: url('media/NHaasGroteskTXPro-65Md.ttf') format('truetype');
   font-weight: normal;
   font-display: swap;
   font-style: normal;
