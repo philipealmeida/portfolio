@@ -37,11 +37,12 @@ body{
 
 .content{
   min-height: 100vh;
-  padding: 3rem;
+  padding: 3.5vw 4vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-flow: column;
+  position: relative;
 }
 
 header,footer{
@@ -131,12 +132,35 @@ footer .mail:hover{
   margin-left: -10.2px;
 }
 
+footer {
+  position: relative;
+}
+
+.design-author {
+  position: absolute;
+  bottom: 210%;
+  right: -4%;
+  font-style: normal;
+  color: inherit;
+  font-size: 0.6rem;
+  opacity: 0.4;
+  transform: rotate3d(0, 0, 1, 270deg );
+  transition: 190ms linear;
+}
+
+.design-author a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.design-author:hover{
+  opacity: 1;
+}
 
 @media (min-width: 1119px) {
   header h2{
     position: absolute;
   }
- 
 }
 
 @media (max-width: 1118px) {
@@ -161,6 +185,17 @@ footer .mail:hover{
   }
 }
 
+@media (max-width: 767px) {
+  .design-author {
+    transition: none;
+    transform: none;
+    left: 0;
+    right: initial;
+    bottom: -11px;
+    display: none;
+  }
+}
+
 @media (max-width: 450px) {
   .content{
     padding: 1rem;
@@ -170,8 +205,8 @@ footer .mail:hover{
   
   footer ul li{
     margin-right: 8vw;
-    margin-bottom: 0.7rem;
   }
+
   header .descr{
     display: none;
   }
@@ -207,7 +242,6 @@ footer .mail:hover{
     color: #a6a6a6;
   }
 }
-
 
 
 
