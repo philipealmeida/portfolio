@@ -229,8 +229,8 @@ footer {
 
 @media (prefers-color-scheme: dark) {
   body {
-    color: #eee;
     opacity: .8;
+    color: #eee;
     background: var(--theme-dark-bg);
   }
 
