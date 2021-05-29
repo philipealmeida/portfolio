@@ -2,11 +2,11 @@
   --win-height: 100%;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
-:root{
+:root {
   --theme-dark-bg: #333a42;
 }
 
@@ -17,6 +17,7 @@
   font-display: swap;
   font-style: normal;
 }
+
 @font-face {
   font-family: "NeueRegular";
   src: url('media/NHaasGroteskTXPro-65Md.ttf') format('truetype');
@@ -25,17 +26,18 @@
   font-style: normal;
 }
 
-html, body{
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
-body{
+body {
   font-family: 'NeueRegular', sans-serif;
 }
 
-.content{
+.content {
   min-height: 100vh;
   padding: 2.5vw 4vw;
   display: flex;
@@ -45,11 +47,12 @@ body{
   position: relative;
 }
 
-header,footer{
+header,
+footer {
   width: 100%;
 }
 
-.container{
+.container {
   max-width: 696px;
   margin: 0 auto;
 }
@@ -59,74 +62,81 @@ header .container {
   font-weight: lighter;
   font-family: 'NeueLight', sans-serif;
 }
-h1,h2,p,span{
+
+h1,
+h2,
+p,
+span {
   font-weight: normal;
 }
-header h2{
+
+header h2 {
   margin: 0;
   font-size: 16px;
   display: inline-block;
   transition: 100ms ease-out;
-  
+
 }
+
 header h2,
-header .container{
+header .container {
   line-height: 1;
 }
 
-header p{
+header p {
   margin: 0;
 }
 
-header .descr{
+header .descr {
   margin-right: 0.1rem;
 }
 
-article h1{
+article h1 {
   font-size: 48px;
   line-height: 0.9;
   letter-spacing: -1.8px;
   font-family: 'NeueRegular', sans-serif;
 }
-i{
-  font-style:normal;
+
+i {
+  font-style: normal;
 }
 
-footer ul{
+footer ul {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-footer ul li{
+footer ul li {
   margin-right: 4.5rem;
 }
 
-.sight{
+.sight {
   color: #64309b;
 }
 
-footer ul a{
+footer ul a {
   font-size: 18px;
   /* color: #000; */
   color: inherit;
   text-decoration: none;
 }
 
-footer .in:hover{
+footer .in:hover {
   color: #0579F0;
 }
 
-footer .git:hover{
+footer .git:hover {
   color: rgb(89, 185, 246);
 }
 
-footer .mail:hover{
+footer .mail:hover {
   color: #F2392C;
 }
 
-.sn{
+.sn {
   letter-spacing: -48px;
   margin-right: 2.1rem;
   margin-left: -10.2px;
@@ -144,7 +154,7 @@ footer {
   color: inherit;
   font-size: 0.6rem;
   opacity: 0.4;
-  transform: rotate3d(0, 0, 1, 270deg );
+  transform: rotate3d(0, 0, 1, 270deg);
   transition: 190ms linear;
 }
 
@@ -153,12 +163,12 @@ footer {
   text-decoration: none;
 }
 
-.design-author:hover{
+.design-author:hover {
   opacity: 1;
 }
 
 @media (min-width: 1119px) {
-  header h2{
+  header h2 {
     position: absolute;
   }
 }
@@ -168,19 +178,21 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    word-wrap: nowrap; 
+    word-wrap: nowrap;
   }
-  .container{
+
+  .container {
     max-width: initial;
     margin: 0;
   }
-  article{
+
+  article {
     width: 100%;
   }
 }
 
 @media (min-width: 768px) {
-  article h1{
+  article h1 {
     font-size: 80px;
   }
 }
@@ -197,31 +209,32 @@ footer {
 }
 
 @media (max-width: 450px) {
-  .content{
+  .content {
     padding: 1rem;
     min-height: calc(100vh - 56px);
     min-height: var(--win-height);
   }
-  
-  footer ul li{
+
+  footer ul li {
     margin-right: 8vw;
   }
 
-  header .descr{
+  header .descr {
     display: none;
   }
 
-  article h1{
+  article h1 {
     font-size: 48px;
     line-height: 1;
   }
-  header p{
+
+  header p {
     font-size: 1.5rem;
   }
 }
 
 @media (max-width: 374px) {
-  article h1{
+  article h1 {
     font-size: 40px;
     line-height: 1;
   }
@@ -229,20 +242,22 @@ footer {
 
 @media (prefers-color-scheme: dark) {
   body {
-    opacity: .8;
     color: #eee;
     background: var(--theme-dark-bg);
+    cursor: default;
+  }
+
+  :is(h2, h1):hover {
+    color: #fff;
   }
 
   /* custom dark colors */
 
-  .sight{
+  .sight {
     color: #a557f7;
   }
-  header .container{
+
+  header .container {
     color: #a6a6a6;
   }
 }
-
-
-
