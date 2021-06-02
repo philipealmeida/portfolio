@@ -12,7 +12,8 @@ Technology
 
 ## Author
 
-  - [Philipe Almeida](https://github.com/philipe-almeida)
+  - Develop by [Philipe Almeida](https://github.com/philipe-almeida)
+  - Design by [João Palmieri](https://www.linkedin.com/in/joao-paulo-palmieri/)
   
 ## License
 
