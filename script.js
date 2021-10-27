@@ -1,9 +1,9 @@
 const DESK_CONTENT =
-    `Hi. I’m Philipe,<br>an Front End <br>Engineer, focused in architect web <br>user interfaces<br>
+    `Hi. I’m Philipe,<br>an Front End <br>Engineer, focused in design web <br>user interfaces<br>
     <span class="sn">——</span> currently<br> working at <span class="sight">vivo.</span>`;
 
 const MOB_CONTENT =
-    `Hi. I’m Philipe,<br>an Front End<br>Engineer, focused in architect web user interfaces<br>
+    `Hi. I’m Philipe,<br>an Front End<br>Engineer, focused in design web user interfaces<br>
     <span class="sn">——</span> currently<br> working at <span class="sight">vivo.</span>`;
 
 const $HERO = document.getElementById('main-content');
