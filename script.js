@@ -1,5 +1,5 @@
 const DESK_CONTENT =
-    `Hi. I’m Philipe,<br>an Front End <br>Engineer, focused in architect web <br>user interfaces
+    `Hi. I’m Philipe,<br>an Front End <br>Engineer, focused in architect web <br>user interfaces<br>
     <span class="sn">——</span> currently<br> working at <span class="sight">vivo.</span>`;
 
 const MOB_CONTENT =
