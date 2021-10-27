@@ -1,17 +1,17 @@
 const DESK_CONTENT =
-    `Hi. I’m Philipe,<br>a Front End & UI<br>Designer, focused in architect user<br>interface<br>
+    `Hi. I’m Philipe,<br>an Front End <br>Engineer, focused in architect web <br>user interfaces
     <span class="sn">——</span> currently<br> working at <span class="sight">vivo.</span>`;
 
 const MOB_CONTENT =
-    `Hi. I’m Philipe,<br>a Front End<br>& UI Designer, focused in architect user interface<br>
+    `Hi. I’m Philipe,<br>an Front End<br>Engineer, focused in architect web user interfaces<br>
     <span class="sn">——</span> currently<br> working at <span class="sight">vivo.</span>`;
 
-const contentUpdate = () => {
-    const $HERO = document.getElementById('main-content');
+const $HERO = document.getElementById('main-content');
+
+const contentUpdate = (() => {
     const setContent = isMobile => isMobile ? $HERO.innerHTML = MOB_CONTENT : $HERO.innerHTML = DESK_CONTENT;
     document.documentElement.style.setProperty('--win-height', `${window.innerHeight}px`);
     (window.matchMedia("(max-width: 500px)").matches) ? setContent(true) : setContent();
-};
+})();
 
-window.addEventListener('load', contentUpdate);
 window.addEventListener('resize', contentUpdate);
