@@ -1,5 +1,6 @@
 :root {
   --win-height: 100%;
+  --color-sight: #14acdc;
 }
 
 * {
@@ -114,7 +115,7 @@ footer ul li {
 }
 
 .sight {
-  color: #64309b;
+  color: var(--color-sight);
 }
 
 footer ul a {
@@ -252,10 +253,6 @@ footer {
   }
 
   /* custom dark colors */
-
-  .sight {
-    color: #a557f7;
-  }
 
   header .container {
     color: #a6a6a6;

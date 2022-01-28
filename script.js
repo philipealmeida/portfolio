@@ -1,10 +1,10 @@
 const DESK_CONTENT =
     `Hi. I’m Philipe,<br>a Front End & UI<br>Designer, focused in architect user<br>interface<br>
-    <span class="sn">——</span> currently<br> working at <span class="sight">vivo.</span>`;
+    <span class="sn">——</span> currently<br> working at <span class="sight">capgemini.</span>`;
 
 const MOB_CONTENT =
     `Hi. I’m Philipe,<br>a Front End<br>& UI Designer, focused in architect user interface<br>
-    <span class="sn">——</span> currently<br> working at <span class="sight">vivo.</span>`;
+    <span class="sn">——</span> currently<br> working at <span class="sight">capgemini.</span>`;
 
 const contentUpdate = () => {
     const $HERO = document.getElementById('main-content');
