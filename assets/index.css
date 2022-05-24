@@ -8,7 +8,7 @@
 }
 
 :root {
-  --theme-dark-bg: #333a42;
+  --theme-dark-bg: #1d2134;
 }
 
 @font-face {
@@ -61,7 +61,7 @@ footer {
 }
 
 .container {
-  max-width: 696px;
+  max-width: 750px;
   margin: 0 auto;
 }
 
@@ -93,15 +93,26 @@ header .container {
 
 header p {
   margin: 0;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  opacity: .55;
 }
 
 header .descr {
+  font-size: 0.9rem;
   margin-right: 0.1rem;
+}
+
+header i {
+  font-size: 1.4rem;
+  line-height: 0;
+  vertical-align: middle;
 }
 
 article h1 {
   font-size: 48px;
-  line-height: 0.9;
+  line-height: 0.94;
   letter-spacing: -1.8px;
   font-family: 'NeueRegular', sans-serif;
 }
@@ -201,7 +212,7 @@ footer {
 
 @media (min-width: 768px) {
   article h1 {
-    font-size: 80px;
+    font-size: 74px;
   }
 }
 
@@ -232,12 +243,18 @@ footer {
   }
 
   article h1 {
-    font-size: 48px;
+    font-size: 45px;
     line-height: 1;
   }
 
   header p {
+    opacity: 1;
+    position: initial;
     font-size: 1.5rem;
+  }
+
+  header i{
+    position: initial;
   }
 }
 
@@ -255,11 +272,9 @@ footer {
     cursor: default;
   }
 
-  :is(h2, h1):hover {
+  /* :is(h2, h1):hover {
     color: #fff;
-  }
-
-  /* custom dark colors */
+  } */
 
   header .container {
     color: #a6a6a6;
