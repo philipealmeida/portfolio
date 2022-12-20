@@ -1,10 +1,10 @@
 const DESK_CONTENT =
     `Hi. I’m Philipe.<br>A software engineer,<br>focused in user interfaces.<br>
-    <span class="sn">——</span> currently working at <span class="sight">capgemini.</span>`;
+    <span class="sn">——</span> currently working at <span class="sight">diconium.</span>`;
 
 const MOB_CONTENT =
     `Hi. I’m Philipe.<br>A software engineer,<br> focused in<br> user interfaces.<br>
-    <span class="sn">——</span> currently working at <span class="sight">capgemini.</span>`;
+    <span class="sn">——</span> currently working at <span class="sight">diconium.</span>`;
 
 const $HERO = document.getElementById('main-content');
 
