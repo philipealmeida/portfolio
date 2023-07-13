@@ -1,14 +1,11 @@
 :root {
   --win-height: 100%;
   --color-sight: #FF5600;
+  --theme-dark-bg: #1d2134;
 }
 
 * {
   box-sizing: border-box;
-}
-
-:root {
-  --theme-dark-bg: #1d2134;
 }
 
 @font-face {
@@ -43,6 +40,7 @@ body {
   -ms-user-select: none;
   /* IE 10+ */
   user-select: none;
+  color: #000;
 }
 
 .content {
@@ -93,7 +91,6 @@ header .container {
 
 header p {
   margin: 0;
-  color: #fff;
   position: relative;
   display: inline-block;
   opacity: .55;
