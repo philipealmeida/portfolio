@@ -59,6 +59,11 @@ footer {
   width: 100%;
 }
 
+pa-header,
+pa-footer {
+  width: 100%;
+}
+
 .container {
   max-width: 750px;
   margin: 0 auto;
@@ -189,6 +194,19 @@ footer {
   opacity: 1;
 }
 
+.main-content-desktop {
+  display: block;
+}
+.main-content-mobile {
+  display: none;
+}
+
+pa-header,
+pa-footer {
+  width: 100sw;
+}
+
+
 @media (min-width: 1119px) {
   header h2 {
     position: absolute;
@@ -261,12 +279,6 @@ footer {
   }
 }
 
-.main-content-desktop {
-  display: block;
-}
-.main-content-mobile {
-  display: none;
-}
 
 @media (max-width: 500px) {
   .main-content-desktop {
