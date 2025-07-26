@@ -1,7 +1,8 @@
 :root {
   --win-height: 100%;
-  --color-sight: #FF5600;
+  --color-sight: #004737;
   --theme-dark-bg: #1d2134;
+  --transition-01: 190ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 * {
@@ -10,7 +11,7 @@
 
 @font-face {
   font-family: "NeueLight";
-  src: url('media/NHaasGroteskTXPro-55Rg.ttf') format('truetype');
+  src: url("media/NHaasGroteskTXPro-55Rg.ttf") format("truetype");
   font-weight: normal;
   font-display: swap;
   font-style: normal;
@@ -18,7 +19,7 @@
 
 @font-face {
   font-family: "NeueRegular";
-  src: url('media/NHaasGroteskTXPro-65Md.ttf') format('truetype');
+  src: url("media/NHaasGroteskTXPro-65Md.ttf") format("truetype");
   font-weight: normal;
   font-display: swap;
   font-style: normal;
@@ -32,7 +33,7 @@ body {
 }
 
 body {
-  font-family: 'NeueRegular', sans-serif;
+  font-family: "NeueRegular", sans-serif;
   -webkit-user-select: none;
   /* Chrome all / Safari all */
   -moz-user-select: none;
@@ -64,9 +65,9 @@ footer {
 }
 
 header .container {
-  color: #7A7A7A;
+  color: #7a7a7a;
   font-weight: lighter;
-  font-family: 'NeueLight', sans-serif;
+  font-family: "NeueLight", sans-serif;
 }
 
 h1,
@@ -81,7 +82,6 @@ header h2 {
   font-size: 16px;
   display: inline-block;
   transition: 100ms ease-out;
-
 }
 
 header h2,
@@ -93,7 +93,7 @@ header p {
   margin: 0;
   position: relative;
   display: inline-block;
-  opacity: .55;
+  opacity: 0.55;
 }
 
 header .descr {
@@ -111,7 +111,7 @@ article h1 {
   font-size: 48px;
   line-height: 0.94;
   letter-spacing: -1.8px;
-  font-family: 'NeueRegular', sans-serif;
+  font-family: "NeueRegular", sans-serif;
 }
 
 i {
@@ -129,8 +129,14 @@ footer ul li {
   margin-right: 4.5rem;
 }
 
-.sight {
+.sight a {
   color: var(--color-sight);
+  text-decoration: none;
+  transition: var(--transition-01);
+
+  &:hover { 
+    text-decoration: underline;
+  }
 }
 
 footer ul a {
@@ -141,7 +147,7 @@ footer ul a {
 }
 
 footer .in:hover {
-  color: #0579F0;
+  color: #0579f0;
 }
 
 footer .git:hover {
@@ -149,7 +155,7 @@ footer .git:hover {
 }
 
 footer .mail:hover {
-  color: #F2392C;
+  color: #f2392c;
 }
 
 .sn {
@@ -171,7 +177,7 @@ footer {
   font-size: 0.6rem;
   opacity: 0.4;
   transform: rotate3d(0, 0, 1, 270deg);
-  transition: 190ms linear;
+  transition: 190ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .design-author a {
@@ -250,8 +256,24 @@ footer {
     font-size: 1.5rem;
   }
 
-  header i{
+  header i {
     position: initial;
+  }
+}
+
+.main-content-desktop {
+  display: block;
+}
+.main-content-mobile {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .main-content-desktop {
+    display: none;
+  }
+  .main-content-mobile {
+    display: block;
   }
 }
 
@@ -263,6 +285,10 @@ footer {
 }
 
 @media (prefers-color-scheme: dark) {
+  :root {
+    --color-sight: #56f09f;
+  }
+
   body {
     color: #eee;
     background: var(--theme-dark-bg);
